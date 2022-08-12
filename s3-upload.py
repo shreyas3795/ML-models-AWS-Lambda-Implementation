@@ -4,14 +4,14 @@ import aioschedule as schedule
 import time
 
 start_time = time.time()
-ACCESS_KEY = 'AKIA2DJVFUEBHPROMQVW'
-SECRET_KEY = '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'
+ACCESS_KEY = ''
+SECRET_KEY = ''
 trace_list = [12, 11, 11, 10, 10]
 
 async def job(message='stuff', n=1):
     s3 = boto3.client('s3', aws_access_key_id=ACCESS_KEY,
                       aws_secret_access_key=SECRET_KEY)
-    s3.upload_file('/Users/shreyassetlurarun/Documents/SA_project/cats/cat.4006.jpg', 'pytorch-resnet50', 'cat1.jpg')
+    s3.upload_file('abc.jpg', 'pytorch-resnet50', 'cat1.jpg')
     print("Upload successful")
     print("--- %s seconds ---" % (time.time() - start_time))
     asyncio.sleep(1)
