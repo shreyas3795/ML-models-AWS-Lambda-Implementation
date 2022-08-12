@@ -1,7 +1,10 @@
 # MLOps
 
-AWS Serverless implementation of ML models. 
+Goal:  To check which frameworks works bes with ML model in AWS Lambda
 
-ML models - Pytorch, Caffe and Tensorflow models were used as serverless applications to determine the best machine learning models. Several parameters were taken into consideration. 
+3 frameworks: Tensorflow, Pytorch and Caffe
 
+3 models - Resnet50, Mobilenet and Inception
+
+These models were used in these 3 frameworks and the results are shown in the research paper attached.
 
